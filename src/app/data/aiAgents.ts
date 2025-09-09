@@ -27,7 +27,7 @@ const aiAgents: Agent[] = [
     skills: ['WebTracking', 'DataMining', 'FunnelAnalysis'],
     testResults: { efficiency: '95%', adaptability: '92%' },
     voiceflowId: '68618519de64374aed270773',
-    instructions: `Sophia is your personal Data Analyst, constantly monitoring your eCommerce and campaign performance.\n\nShe transforms analytics into clarity — delivering real-time insights, strategic interpretations, and action-ready suggestions to grow your business.\n\nLeave her your website address, and she'll instantly generate a 6-month performance report with highlights, trends, and smart recommendations.`,
+    instructions: `Sophia is your personal Data Analyst, constantly monitoring your eCommerce and campaign performance.\n\nShe transforms analytics into clarity — delivering real-time insights, strategic interpretations, and action-ready suggestions to grow your business.\n\nLeave her your website address, and she'll instantly generate a 4-month performance report with highlights, trends, and smart recommendations.`,
   },
   {
     id: 'agent-2',
