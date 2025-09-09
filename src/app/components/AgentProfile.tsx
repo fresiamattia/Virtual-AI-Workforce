@@ -1,23 +1,10 @@
-// components/AgentProfile.tsx
 'use client';
 
 import React, { useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaArrowLeft, FaHeadphones } from 'react-icons/fa';
 import { Agent } from '../data/aiAgents';
-
-// Dichiarazione globale per la finestra
-declare global {
-  interface Window {
-    voiceflow: {
-      chat: {
-        load(config: any): void;
-        open(): void;
-        hide(): void;
-      };
-    };
-  }
-}
 
 interface AgentProfileProps {
   agent: Agent;
@@ -60,9 +47,12 @@ export default function AgentProfile({ agent }: AgentProfileProps) {
         </button>
       </Link>
       <div className="text-center mb-8">
-        <img
+        {/* Usiamo il componente Image ottimizzato */}
+        <Image
           src={agent.image}
           alt={agent.name}
+          width={224}
+          height={224}
           className="w-56 h-56 rounded-full border-4 border-cyan-500 mx-auto mb-4"
         />
         <h2 className="text-4xl font-bold text-white">{agent.name}</h2>

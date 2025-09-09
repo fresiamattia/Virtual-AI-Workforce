@@ -1,4 +1,3 @@
-// src/app/components/VoiceflowScriptLoader.tsx
 'use client';
 
 import Script from 'next/script';
@@ -10,8 +9,7 @@ export default function VoiceflowScriptLoader() {
       id="voiceflow-widget-script"
       strategy="afterInteractive"
       onLoad={() => {
-        // La logica che gestiva lo script, se ce n'era, va qui.
-        // Ad esempio, un console.log() per verificare il caricamento.
+        // Log per verificare che lo script si sia caricato correttamente
         console.log("Voiceflow script caricato con successo!");
       }}
       src="https://cdn.voiceflow.com/widget-next/bundle.mjs"
