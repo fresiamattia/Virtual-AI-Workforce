@@ -44,7 +44,7 @@ const aiAgents: Agent[] = [
   {
     id: 'agent-3',
     name: 'Noah Patel',
-    role: 'Social & Blog Assistant',
+    role: 'Ghost Writer AI.',
     status: 'Available',
     image: '/pics/4.png',
     description: "Generates engaging and tailored content for your social media channels and blog posts based on specific topics and keywords.",
